@@ -19,7 +19,7 @@ submitBtn.addEventListener('click', () => {
             }
         })
         .then(data => {
-            qrDiv.innerHTML = `<img src="${data}" alt="QR Code">`;
+            qrDiv.innerHTML = `<img src="${data}" alt="QR Code with contents: ${text}">`;
         })
         .catch(error => {
             qrDiv.textContent = error.message;
